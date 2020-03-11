@@ -4,12 +4,12 @@
     <title>Flanger</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
-    <%= yield %>
-  </body>
-</html>
+    <body class="<%= yield (:body_class) %>">
+      <%= render 'shared/errors' %>
+      <%= render 'shared/navbar' %>
+      <%= yield %>
+    </body>
+  </html>

@@ -30,6 +30,7 @@ gem 'bulma-rails', '~> 0.8.0'
 gem 'carrierwave', '~> 2.0'
 gem 'devise'
 gem 'gravatar_image_tag'
+gem 'jquery-rails'
 gem 'mini_magick'
 gem 'simple_form'
 
